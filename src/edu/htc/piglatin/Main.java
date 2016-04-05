@@ -1,8 +1,8 @@
 package edu.htc.piglatin;
 
-import edu.htc.file.FileCompareUtil;
-import edu.htc.file.FileParser;
-import edu.htc.file.ListFileWriter;
+//import edu.htc.file.FileCompareUtil;
+//import edu.htc.file.FileParser;
+//import edu.htc.file.ListFileWriter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,8 +10,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
+    public static void main(String[] args)
+    {
+        PigLatinTranslator t = new PigLatinTranslator();
+        String tester = "Hello there";
+        System.out.println(tester);
+        System.out.println(t.translateToPigLatin(tester));
+    }
 
-    public static void main(String[] args) throws IOException {
+/*    public static void main(String[] args) throws IOException {
 
         String current = new File( "." ).getCanonicalPath();
 
@@ -93,5 +100,6 @@ public class Main {
             System.out.println("An error occurred writing the file.");
             System.out.println(e.getMessage());
         }
-    }
+    }*/
+
 }
