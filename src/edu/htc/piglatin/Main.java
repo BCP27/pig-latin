@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args)
     {
         PigLatinTranslator t = new PigLatinTranslator();
-        String tester = "Hello there";
+        String tester = "serves to introduce escaped constructs, as defined in the table above, as well as to quote characters that otherwise would be interpreted as unescaped constructs. Thus the expression ";
         System.out.println(tester);
         System.out.println(t.translateToPigLatin(tester));
     }
